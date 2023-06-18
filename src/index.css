@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* COLORS */
+:root {
+  --pink : hsl(322, 100%, 66%);
+  --vpcyan: hsl(193, 100%, 96%);
+  --vdcyan: hsl(192, 100%, 9%);
+  --gblue: hsl(208, 11%, 55%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 18px;
+}
+
+.nav-hero {
+  background-color: var(--vpcyan);
+  background-image: url("./assets/images/bg-hero-desktop.svg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero button {
+  background-color: var(--pink);
+}
+
+.hero button:hover,.card-footer button:hover {
+  background-color: var(--vdcyan);
+  color: var(--vpcyan);
+}
+
+footer {
+  background-color: var(--vdcyan);
+  margin-top: 10rem;
+}
+
+.card-footer {
+  top: -9rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card-footer button {
+  background-color: var(--pink);
+  color: white;
+}
+
+footer li {
+  cursor: pointer;
+}
+
+footer li:hover {
+  color: var(--gblue);
 }
